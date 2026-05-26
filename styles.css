@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+}
+
+
+h1 {
+    margin: 0;
+    font-size: 32px;
+    color: #8b9cff;
+}
+
+
+header p {
+    margin: 8px 0 0 0;
+    color: #3281d5;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    padding: 40px;
+    font-family: Arial, sans-serif;
+    color: #f4f7fb;
+
+    background-image: url("Background-Image.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+header {
+    width: 520px;
+    margin-bottom: 24px;
+    padding: 22px 26px;
+    border-radius: 16px;
+    background: #1f2937;
+    font-size: 32px;
+    font-weight: 800;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+#Exam, #Exercise, #Presence, #Result {
+    width: 520px;
+    margin-bottom: 22px;
+    padding: 24px 28px;
+    border-radius: 18px;
+    background: rgba(31, 41, 55, 0.92);
+    border: 1px solid #374151;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.28);
+}
+
+label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+input {
+    width: 95px;
+    padding: 9px 12px;
+    border: 2px solid #4b5563;
+    border-radius: 12px;
+    background: #f9fafb;
+    color: #111827;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+input:focus {
+    outline: none;
+    border-color: #38bdf8;
+    box-shadow: 0 0 0 4px rgba(56, 189, 248, 0.25);
+}
+
+p {
+    margin: 12px 0;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.negative {
+    color: #f87171;
+}
+
+.positive {
+    color: #4ade80;
+}
+
+.dropped {
+    position: relative;
+    background: rgba(250, 204, 21, 0.16);
+    border: 2px solid #facc15;
+    color: #facc15;
+    border-radius: 12px;
+    padding: 10px;
+}
+
+.dropped::after {
+    content: "X";
+    position: absolute;
+    right: -14px;
+    top: -14px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: #ef4444;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
